@@ -1,0 +1,30 @@
+
+.mdl-layout__drawer-button {
+    color:#e6e6e8;;
+}
+
+.mdl-navigation .mdl-navigation__link {
+    color: #e6e6e8;
+}
+
+.mdl-layout-title {
+    color: #e6e6e8;
+}
+
+.demo-layout-transparent {
+  background-color: #06000a;
+}
+
+.mdl-layout__content {
+    height: 100%;
+}
+
+.landing {
+    height: 100%;
+    background-color:#06000a;
+}
+
+.about {
+    height: 100%; 
+    background-color:#e6e6e8;
+}
