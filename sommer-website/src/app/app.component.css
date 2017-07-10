@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+.main-title {
+    padding-top: 5%;
+    text-align: center;
+    color:#e6e6e8;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-description {
+    text-align: center;
+    color:#e6e6e8;
+    font-family: 'Roboto Mono', monospace;
+}
 
 .mdl-layout__drawer-button {
-    color:#e6e6e8;;
+    color:#e6e6e8;
 }
 
 .mdl-navigation .mdl-navigation__link {
@@ -9,10 +23,12 @@
 
 .mdl-layout-title {
     color: #e6e6e8;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .demo-layout-transparent {
   background-color: #06000a;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .mdl-layout__content {
@@ -21,10 +37,16 @@
 
 .landing {
     height: 100%;
-    background-color:#06000a;
+    background-color:transparent;
 }
 
 .about {
     height: 100%; 
     background-color:#e6e6e8;
 }
+
+.experience {
+    height: 100%; 
+    background-color:#06000a;
+}
+
