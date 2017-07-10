@@ -40,13 +40,21 @@
     background-color:transparent;
 }
 
-.about {
+.experience {
     height: 100%; 
     background-color:#e6e6e8;
 }
 
-.experience {
+.projects {
     height: 100%; 
-    background-color:#06000a;
+    background-color: transparent;
 }
+
+.contact {
+    height: 100%; 
+    background-color:#e6e6e8;
+}
+
+
+
 
