@@ -3,7 +3,7 @@
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Sommer Shurbaji</span>
+      <span class="mdl-layout-title ">Sommer Shurbaji</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
@@ -29,7 +29,7 @@
 
   <main class="mdl-layout__content">
     <div class="landing">
-      <h1 class="main-title"> &lt;Hello World&gt; </h1>
+      <h1 class="main-title"> {{typewriter_display }}<span class="blinking-cursor" [ngClass]="{'blinking-cursor-animate': animation_complete}"></span> </h1>
       <p class="main-description"> Hi, my name is Sommer Shurbaji </p>
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>

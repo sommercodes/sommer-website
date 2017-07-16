@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-.main-title {
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e6e6e8 }
+}
+
+.blinking-cursor {
+    border-right: 3px solid #e6e6e8;
+    /*animation: blink-caret 1.5s step-end infinite;*/
+}
+
+.blinking-cursor-animate {
+    animation: blink-caret 1.5s step-end infinite;
+}
+
+h1 {
     padding-top: 5%;
     text-align: center;
     color:#e6e6e8;
     font-family: 'Roboto Mono', monospace;
-}
+ }
 
 .main-description {
     text-align: center;

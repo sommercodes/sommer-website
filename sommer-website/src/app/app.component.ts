@@ -12,8 +12,12 @@ export class AppComponent {
     myParams: object = {};
     width: number = 100;
     height: number = 100;
+    typewriter_text: string = "<Hello World>";
+    typewriter_display: string = "";
+    animation_complete: boolean = false;
  
     ngOnInit() {
+      this.typingCallback(this);
         this.myStyle = {
             'position': 'fixed',
             'width': '100%',
@@ -135,5 +139,17 @@ export class AppComponent {
   },
   "retina_detect": true
     };
+  }
+  
+  typingCallback(that) {
+    let total_length = that.typewriter_text.length;
+    let current_length = that.typewriter_display.length;
+    if (current_length < total_length) {
+      that.typewriter_display += that.typewriter_text[current_length];
+      setTimeout(that.typingCallback, 200, that);
+    } else {
+      that.typewriter_display = that.typewriter_text;
+      that.animation_complete = true;
     }
+  }
 }
