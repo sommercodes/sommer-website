@@ -30,11 +30,23 @@
   <main class="mdl-layout__content">
     <div id="home" class="landing">
       <h1 class="main-title"> {{typewriter_display }}<span class="blinking-cursor" [ngClass]="{'blinking-cursor-animate': animation_complete}"></span> </h1>
-      <p class="main-description"> Hi, my name is Sommer Shurbaji </p>
+      <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
+          <p class="main-description"> Hi, my name is Sommer Shurbaji. I am currently a computer science student
+            completing a 16 month software development internship. I have experience in enterprise software
+          development as well as experience with QA test automation. I have interests in web development, IOT,
+        and data analytics. </p>
+      </div>
+      </div>
+      <div class="arrow-down">
+        <a href="#experience"><i class="fa fa-chevron-circle-down fa-3x arrow-down"></i></a> 
+      </div>              
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
     </div>
     <div id="experience" class="experience">
+      <h2 class="dark"> Experience</h2>
+
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col info-container">
           <h4><strong> Software Development Internship - IBM Security </strong> </h4>
@@ -64,6 +76,7 @@
     <div id="projects" class="projects">
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
+      <h2 class="light"> Projects </h2>
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
             <div class="mdl-card mdl-shadow--2dp project-card">
@@ -71,10 +84,18 @@
                 <h2 class="mdl-card__title-text">Chat Application</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
+                    <img src="../assets/images/instant-chat.png" alt="instant chat">
+                    <div class="card-description"> 
+                    I am currently working on a real time chat application using Angular2, Nodejs, Mongodb and Socket.io. 
+                    I have implemented a login system using json web tokens. I have also implemented real time
+                    messaging using web sockets from the Socket.io package. I am currently working on fixing 
+                    a few bugs around displaying which users are currently online, and also adding pop ups that
+                    display error messages if a user tries to create username that already exists for example.
+                    </div>
               </div>
               <div class="mdl-card__menu">
+                <a href="https://instant-chat-ui.herokuapp.com/" class="mdl-button mdl-js-button mdl-button--raised">Go to Instant Chat!</a>
+
               </div>
             </div>
 
@@ -86,10 +107,17 @@
                 <h2 class="mdl-card__title-text">Jungle Escape</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
+              <div class="mdl-card__supporting-text">
+                    <img src="../assets/images/jungle-escape.png" alt="jungle escape">
+                    <div class="card-description"> 
+                      Jungle escape is a game that I worked on as part of a game development course last year.
+                      I worked in a group of 3 and we implemented the game using Unity 3D. All of the game
+                      login was implemented using C#.
+                    </div>
+              </div>
               </div>
               <div class="mdl-card__menu">
+                <a href="https://jungle-escape.herokuapp.com/" class="mdl-button mdl-js-button mdl-button--raised">Go to Jungle Escape!</a>
               </div>
             </div>
 
@@ -100,6 +128,7 @@
     </div>
 
     <div id="extracurriculars" class="extracurriculars">
+      <h2 class="dark"> Extracurriculars</h2>
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col info-container">
           <h4><strong> Code the Change: Queen's Chapter </strong> </h4>
@@ -126,6 +155,7 @@
     </div>
 
     <div id="contact" class="contact">
+
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
 
@@ -133,15 +163,21 @@
           <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
             <div class="mdl-card mdl-shadow--2dp project-card">
               <div class="mdl-card__title card-title">
-                <h2 class="mdl-card__title-text">Contact</h2>
+                <h2 class="mdl-card__title-text">Contact Me!</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                  <i class="fa fa-envelope fa-3x"></i>
-                  <i class="fa fa-github fa-3x"></i>
-                  <i class="fa fa-linkedin-square fa-3x"></i>
-
-
-
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <i class="fa fa-envelope fa-3x contact-link"></i>
+                      <p> sommershurbaji23@gmail.com </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <a href="https://ca.linkedin.com/in/sommershurbaji"><i class="fa fa-linkedin-square fa-3x contact-link"></i></a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <a href="https://github.com/sommercodes"><i class="fa fa-github fa-3x contact-link"></i></a>               
+                    </div>
+                  </div>
               </div>
               <div class="mdl-card__menu">
               </div>

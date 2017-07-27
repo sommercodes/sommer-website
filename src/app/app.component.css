@@ -26,8 +26,17 @@ h1 {
     font-family: 'Roboto Mono', monospace;
  }
 
-h2 {
+h2.light {
     font-family: 'Roboto Mono', monospace;
+    color: #e6e6e8;
+    text-align: center;
+
+ }
+
+ h2.dark {
+    padding-top: 30px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
 
  }
 
@@ -97,6 +106,20 @@ h2 {
     padding: 40px;
 }
 
+.card-description {
+    padding-top: 30px;
+}
+
+.contact-link {
+    padding-left: 40px;
+    color: #06000a;
+}
+
+.arrow-down {
+    padding-top: 40px;
+    color: #e6e6e8;
+    text-align: center;
+}
 
 
 
