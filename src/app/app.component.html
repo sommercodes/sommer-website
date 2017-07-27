@@ -8,43 +8,146 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Home</a>
-        <a class="mdl-navigation__link" href="">Experience</a>
-        <a class="mdl-navigation__link" href="">Projects</a>
-        <a class="mdl-navigation__link" href="">Blog</a>
-        <a class="mdl-navigation__link" href="">Contact</a>
+        <a class="mdl-navigation__link" href="#home">Home</a>
+        <a class="mdl-navigation__link" href="#experience">Experience</a>
+        <a class="mdl-navigation__link" href="#projects">Projects</a>
+        <a class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>
+        <a class="mdl-navigation__link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
     <span class="mdl-layout-title">Sommer Shurbaji</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Home</a>
-      <a class="mdl-navigation__link" href="">Experience</a>
-      <a class="mdl-navigation__link" href="">Projects</a>
-      <a class="mdl-navigation__link" href="">Blog</a>
-      <a class="mdl-navigation__link" href="">Contact</a>
+      <a class="mdl-navigation__link" href="#home">Home</a>
+      <a class="mdl-navigation__link" href="#experience">Experience</a>
+      <a class="mdl-navigation__link" href="#projects">Projects</a>
+      <a class="mdl-navigation__link" href="#extracurriculars">Projects</a>
+      <a class="mdl-navigation__link" href="#contact">Contact</a>
     </nav>
   </div>
 
   <main class="mdl-layout__content">
-    <div class="landing">
+    <div id="home" class="landing">
       <h1 class="main-title"> {{typewriter_display }}<span class="blinking-cursor" [ngClass]="{'blinking-cursor-animate': animation_complete}"></span> </h1>
       <p class="main-description"> Hi, my name is Sommer Shurbaji </p>
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
     </div>
-    <div class="experience">
+    <div id="experience" class="experience">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col info-container">
+          <h4><strong> Software Development Internship - IBM Security </strong> </h4>
+          <p class="description"> I am currently completing a 16 month internship with IBM Security.
+            Throughout my internship, I have had experiences working on full stack web development. I mainly
+            worked with Angular 2 for UI development and Nodejs for backend development. I also have experiences 
+            improving and developing the
+            automation testing infrastructure for our product. I mainly worked with the Jenkins CI and Urban Code 
+            automation frameworks to automate testing of nightly builds.
+          </p>
+
+
+        </div>
+        <div class="mdl-cell mdl-cell--6-col info-container">
+          <h4> <strong> Teaching Assistant - Queen's University </strong> </h4>
+            <p class="description"> During the 2015-2016 school year, I was a teaching assistant for the courses
+              CISC 282: Intro to web development and CISC 121: Intro to computer science. I frequently held office
+              hours to answer student questions, and was assisted in grading assignments, quizzes, and midterm exams.
+
+            </p>
+
+        </div>
+      </div>
 
     </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
+      <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
+      </particles>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
+            <div class="mdl-card mdl-shadow--2dp project-card">
+              <div class="mdl-card__title card-title">
+                <h2 class="mdl-card__title-text">Chat Application</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+              <div class="mdl-card__menu">
+              </div>
+            </div>
+
+
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
+            <div class="mdl-card mdl-shadow--2dp project-card">
+              <div class="mdl-card__title card-title">
+                <h2 class="mdl-card__title-text">Jungle Escape</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+              <div class="mdl-card__menu">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+    </div>
+
+    <div id="extracurriculars" class="extracurriculars">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col info-container">
+          <h4><strong> Code the Change: Queen's Chapter </strong> </h4>
+            <p class="description"> I participated in Code the Change: Queen's Chapter during the 2015-2016
+              school year as the Director of Projects. Code the Change is an organization that hosts hackathons
+              with the purpose of developing software for non-profit organizations. As Director of Projects,
+              my responsibility was to seek out non-profit organizations that were in need of a project, and work
+              with them to develop a design or idea for a project that could be implemented at the annual hackathon.
+            </p>
+
+
+        </div>
+        <div class="mdl-cell mdl-cell--6-col info-container">
+          <h4> <strong> Orientation Committee - Queen's School of Computing </strong> </h4>
+            <p class="description"> In 2014-2015, I participated in the Queen's School of Computing Orientation 
+              Committee. My responsibilities were to develop publications for the orientation week, where I designed the
+              orientation handbook for first year students, as well as several other publications. I was also responsible 
+              for planning the events of the orientation week with the rest of the committee. 
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="contact" class="contact">
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
 
-    </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
+            <div class="mdl-card mdl-shadow--2dp project-card">
+              <div class="mdl-card__title card-title">
+                <h2 class="mdl-card__title-text">Contact</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <i class="fa fa-envelope fa-3x"></i>
+                  <i class="fa fa-github fa-3x"></i>
+                  <i class="fa fa-linkedin-square fa-3x"></i>
 
-    <div class="contact">
+
+
+              </div>
+              <div class="mdl-card__menu">
+              </div>
+            </div>
+          </div>
+        </div>
 
     </div>
 

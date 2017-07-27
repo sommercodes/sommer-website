@@ -22,6 +22,15 @@ h1 {
     font-family: 'Roboto Mono', monospace;
  }
 
+ h4 {
+    font-family: 'Roboto Mono', monospace;
+ }
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+
+ }
+
 .main-description {
     text-align: center;
     color:#e6e6e8;
@@ -55,19 +64,37 @@ h1 {
     background-color:transparent;
 }
 
-.experience {
-    height: 100%; 
+.experience { 
     background-color:#e6e6e8;
 }
 
+.extracurriculars { 
+    background-color:#e6e6e8;
+
+}
+
 .projects {
-    height: 100%; 
     background-color: transparent;
 }
 
 .contact {
-    height: 100%; 
+    background-color: transparent;
+}
+
+.info-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.project-card {
     background-color:#e6e6e8;
+    width: 100%;
+}
+
+.description {
+    padding: 40px;
 }
 
 
