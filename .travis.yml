@@ -1,0 +1,31 @@
+language: node_js
+
+node_js:
+  - "8"
+sudo: required
+
+services:
+  - docker
+
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESSKEYID
+  secret_access_key:
+    secure: "$SECRETACCESSKEY"
+  region: "ca-central-1"  
+  app: "sommer-website"
+  env: "sommer-website"
+  bucket_name: "elasticbeanstalk-ca-central-1-882371129764"
+  on:
+    branch: master
+
+
+
+before_deploy:
+  - npm run build:prod
+  - docker build -t sommer-website .
+  - docker images
+  - docker run -p 4000:8080 -d sommer-website
+  - sleep 15
+  - docker ps
