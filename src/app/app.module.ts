@@ -5,6 +5,8 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
 
 import { AppComponent } from './app.component';
 
+import {ScrollToModule} from 'ng2-scroll-to';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     ParticlesModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,192 +1,70 @@
+<!-- Uses a transparent header that draws on top of the layout's background -->
 
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title ">Sommer Shurbaji</span>
+      <span class="mdl-layout-title">Sommer Shurbaji</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#home">Home</a>
-        <a class="mdl-navigation__link" href="#experience">Experience</a>
-        <a class="mdl-navigation__link" href="#projects">Projects</a>
-        <a class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>
-        <a class="mdl-navigation__link" href="#contact">Contact</a>
+        <a scrollTo class="mdl-navigation__link" href="#test">About</a>
+        <a class="mdl-navigation__link" href="">Experience</a>
+        <a class="mdl-navigation__link" href="">Projects</a>
+        <a class="mdl-navigation__link" href="">Extracurriculars</a>
       </nav>
     </div>
   </header>
-  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+  <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Sommer Shurbaji</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#home">Home</a>
-      <a class="mdl-navigation__link" href="#experience">Experience</a>
-      <a class="mdl-navigation__link" href="#projects">Projects</a>
-      <a class="mdl-navigation__link" href="#extracurriculars">Projects</a>
-      <a class="mdl-navigation__link" href="#contact">Contact</a>
+      <a class="mdl-navigation__link" href="">About</a>
+      <a class="mdl-navigation__link" href="">Experience</a>
+      <a class="mdl-navigation__link" href="">Projects</a>
+      <a class="mdl-navigation__link" href="">Extracurriculars</a>
     </nav>
   </div>
-
   <main class="mdl-layout__content">
-    <div id="home" class="landing">
-      <h1 class="main-title"> {{typewriter_display }}<span class="blinking-cursor" [ngClass]="{'blinking-cursor-animate': animation_complete}"></span> </h1>
-      <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
-          <p class="main-description"> Hi, my name is Sommer Shurbaji. I am currently a computer science student
-            completing a 16 month software development internship. I have experience in enterprise software
-          development as well as experience with QA test automation. I have interests in web development, IOT,
-        and data analytics! </p>
+    <div class="mdl-layout">
+    <div class="landing" id="landing">
+      <div class="mdl-grid" style="margin-top: 0;">
+        <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+          <h1 class="main-title"> {{typewriter_display }}<span class="blinking-cursor" [ngClass]="{'blinking-cursor-animate': animation_complete}"></span> </h1>
+        </div>
       </div>
+      <div class="mdl-grid" style="margin-top: 5%;">
+        <div class="mdl-cell mdl-cell--3-col">
+        </div>
+        <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
+          <a href="https://ca.linkedin.com/in/sommershurbaji" target="_blank"><fa [name]="'linkedin-square'" class="contact-icons" [size]=3></fa></a>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
+          <a href="https://github.com/sommercodes" target="_blank"><fa [name]="'github'" class="contact-icons" [size]=3></fa></a>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
+          <a href="https://medium.com/@sommershurbaji" target="_blank"><fa [name]="'medium'" class="contact-icons" [size]=3></fa></a>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col">
+        </div>
       </div>
-      <div class="arrow-down">
-        <a href="#experience"><i class="fa fa-chevron-circle-down fa-3x arrow-down"></i></a> 
-      </div>              
+      <div class="mdl-grid" style="margin-top: 10%;">
+        <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+          <a scrollTo href="#test" role="button" style="color: #e6e6e8; background-color: #c43235;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+            About Me!
+          </a>
+        </div>
+      </div>
       <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
       </particles>
     </div>
-    <div id="experience" class="experience">
-      <h2 class="dark"> Experience</h2>
+    </div>
 
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col info-container">
-          <h4><strong> Software Development Internship - IBM Security </strong> </h4>
-          <p class="description"> I am currently completing a 16 month internship with IBM Security.
-            Throughout my internship, I have had experiences working on enterpise software. I mainly
-            worked with Angular 2 for UI development and Nodejs for backend development. I also have experiences 
-            improving and developing the
-            automation testing infrastructure for our product using Jenkins CI, Urban Code and Travis automation frameworks.
-          </p>
-
-
-        </div>
-        <div class="mdl-cell mdl-cell--6-col info-container">
-          <h4> <strong> Teaching Assistant - Queen's University </strong> </h4>
-            <p class="description"> During the 2015-2016 school year, I was a teaching assistant for the courses
-              CISC 282: Intro to web development and CISC 121: Intro to computer science. I frequently held office
-              hours to answer student questions, and assisted in grading assignments, quizzes, and midterm exams.
-
-            </p>
-
-        </div>
+    <div class="mdl-grid experience" id="test">
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <h2 class="dark"> Hello World </h2>
       </div>
-
-    </div>
-
-    <div id="projects" class="projects">
-      <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
-      </particles>
-      <h2 class="light"> Projects </h2>
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
-            <div class="mdl-card mdl-shadow--2dp project-card">
-              <div class="mdl-card__title card-title">
-                <h2 class="mdl-card__title-text">Chat Application</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                    <img src="../assets/images/instant-chat.png" alt="instant chat">
-                    <div class="card-description"> 
-                    I am currently working on a real time chat application using Angular2, Nodejs, Mongodb and Socket.io. 
-                    I have implemented a login system using json web tokens. I have also implemented real time
-                    messaging using web sockets from the Socket.io package. I am currently working on fixing 
-                    a few bugs around displaying which users are currently online, and also adding pop ups that
-                    display error messages if a user tries to create a username that already exists for example. 
-                    Visit the site in the link above to see my progress!
-                    </div>
-              </div>
-              <div class="mdl-card__menu">
-                <a href="https://instant-chat-ui.herokuapp.com/" class="mdl-button mdl-js-button mdl-button--raised">Go to Instant Chat!</a>
-
-              </div>
-            </div>
-
-
-          </div>
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
-            <div class="mdl-card mdl-shadow--2dp project-card">
-              <div class="mdl-card__title card-title">
-                <h2 class="mdl-card__title-text">Jungle Escape</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-              <div class="mdl-card__supporting-text">
-                    <img src="../assets/images/jungle-escape.png" alt="jungle escape">
-                    <div class="card-description"> 
-                      Jungle escape is a game that I worked on as part of a game development course last year.
-                      I worked in a group of 3 and we implemented the game using Unity 3D. All of the game
-                      logic was implemented using C#. Click the link above to play the game!
-                    </div>
-              </div>
-              </div>
-              <div class="mdl-card__menu">
-                <a href="https://jungle-escape.herokuapp.com/" class="mdl-button mdl-js-button mdl-button--raised">Go to Jungle Escape!</a>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-    </div>
-
-    <div id="extracurriculars" class="extracurriculars">
-      <h2 class="dark"> Extracurriculars</h2>
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col info-container">
-          <h4><strong> Code the Change: Queen's Chapter </strong> </h4>
-            <p class="description"> I participated in Code the Change: Queen's Chapter during the 2015-2016
-              school year as the Director of Projects. Code the Change is an organization that hosts hackathons
-              with the purpose of developing software for non-profit organizations. As Director of Projects,
-              my responsibility was to seek out non-profit organizations that were in need of a project, and work
-              with them to develop a design or idea for a project that could be implemented at the annual hackathon.
-            </p>
-
-
-        </div>
-        <div class="mdl-cell mdl-cell--6-col info-container">
-          <h4> <strong> Orientation Committee - Queen's School of Computing </strong> </h4>
-            <p class="description"> In 2014-2015, I participated in the Queen's School of Computing Orientation 
-              Committee. My responsibilities were to develop publications for the orientation week, where I designed the
-              orientation handbook for first year students, as well as several other publications. I was also responsible 
-              for planning the events of the orientation week with the rest of the committee. 
-            </p>
-
-        </div>
-      </div>
-
-    </div>
-
-    <div id="contact" class="contact">
-
-      <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height">
-      </particles>
-
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset info-container">            
-            <div class="mdl-card mdl-shadow--2dp project-card">
-              <div class="mdl-card__title card-title">
-                <h2 class="mdl-card__title-text">Contact Me!</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                  <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col">
-                      <i class="fa fa-envelope fa-3x contact-link"></i>
-                      <p> sommershurbaji23@gmail.com </p>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                      <a href="https://ca.linkedin.com/in/sommershurbaji"><i class="fa fa-linkedin-square fa-3x contact-link"></i></a>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                      <a href="https://github.com/sommercodes"><i class="fa fa-github fa-3x contact-link"></i></a>               
-                    </div>
-                  </div>
-              </div>
-              <div class="mdl-card__menu">
-              </div>
-            </div>
-          </div>
-        </div>
-
     </div>
 
   </main>
 </div>
-

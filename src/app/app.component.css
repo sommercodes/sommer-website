@@ -121,5 +121,13 @@ h2.light {
     text-align: center;
 }
 
+.contact-icons:hover {
+    color: #c43235;
+}
+
+.contact-icons {
+    color:#e6e6e8;
+}
+
 
 
