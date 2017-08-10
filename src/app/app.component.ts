@@ -12,7 +12,7 @@ export class AppComponent {
     myParams: object = {};
     width: number = 100;
     height: number = 100;
-    typewriter_text: string = "<Hello World>";
+    typewriter_text: string = "<Hello World/>";
     typewriter_display: string = "";
     animation_complete: boolean = false;
  

@@ -22,10 +22,6 @@ h1 {
     font-family: 'Roboto Mono', monospace;
  }
 
- h4 {
-    font-family: 'Roboto Mono', monospace;
- }
-
 h2.light {
     font-family: 'Roboto Mono', monospace;
     color: #e6e6e8;
@@ -39,12 +35,6 @@ h2.light {
     text-align: center;
 
  }
-
-.main-description {
-    text-align: center;
-    color:#e6e6e8;
-    font-family: 'Roboto Mono', monospace;
-}
 
 .mdl-layout__drawer-button {
     color:#e6e6e8;
@@ -86,39 +76,8 @@ h2.light {
     background-color: transparent;
 }
 
-.contact {
+.about {
     background-color: transparent;
-}
-
-.info-container {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-.project-card {
-    background-color:#e6e6e8;
-    width: 100%;
-}
-
-.description {
-    padding: 40px;
-}
-
-.card-description {
-    padding-top: 30px;
-}
-
-.contact-link {
-    padding-left: 40px;
-    color: #06000a;
-}
-
-.arrow-down {
-    padding-top: 40px;
-    color: #e6e6e8;
-    text-align: center;
 }
 
 .contact-icons:hover {
@@ -127,6 +86,32 @@ h2.light {
 
 .contact-icons {
     color:#e6e6e8;
+}
+
+
+.mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.mdl-card__media > img {
+  max-width: 50%;
+      display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.mdl-card__media{
+  background-color: transparent;
+}
+
+.mdl-card__title-text {
+    padding-top: 0px;
 }
 
 
