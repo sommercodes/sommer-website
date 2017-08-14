@@ -15,7 +15,7 @@
     animation: blink-caret 1.5s step-end infinite;
 }
 
-h1 {
+h1.main-title {
     padding-top: 5%;
     text-align: center;
     color:#e6e6e8;
@@ -23,7 +23,7 @@ h1 {
  }
 
 h2.light {
-    font-family: 'Roboto Mono', monospace;
+    /*font-family: 'Roboto Mono', monospace;*/
     color: #e6e6e8;
     text-align: center;
 
@@ -31,7 +31,7 @@ h2.light {
 
  h2.dark {
     padding-top: 30px;
-    font-family: 'Roboto Mono', monospace;
+    /*font-family: 'Roboto Mono', monospace;*/
     text-align: center;
 
  }
@@ -46,12 +46,12 @@ h2.light {
 
 .mdl-layout-title {
     color: #e6e6e8;
-    font-family: 'Roboto Mono', monospace;
+    /*font-family: 'Roboto Mono', monospace;*/
 }
 
 .demo-layout-transparent {
   background-color: #06000a;
-  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Roboto Mono', monospace;*/
 }
 
 .mdl-layout__content {
@@ -114,5 +114,7 @@ h2.light {
     padding-top: 0px;
 }
 
-
+p {
+    color: #06000a;
+}
 
