@@ -12,7 +12,7 @@
         <a scrollTo class="mdl-navigation__link" href="#about">About</a>
         <a scrollTo class="mdl-navigation__link" href="#experience">Experience</a>
         <a scrollTo class="mdl-navigation__link" href="#projects">Projects</a>
-        <a scrollTo class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>
+        <!--<a scrollTo class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>-->
       </nav>
     </div>
   </header>
@@ -22,7 +22,7 @@
       <a class="mdl-navigation__link" href="#about">About</a>
       <a class="mdl-navigation__link" href="#experience">Experience</a>
       <a class="mdl-navigation__link" href="#projects">Projects</a>
-      <a class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>
+      <!--<a class="mdl-navigation__link" href="#extracurriculars">Extracurriculars</a>-->
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -34,7 +34,10 @@
         </div>
       </div>
       <div class="mdl-grid" style="margin-top: 5%;">
-        <div class="mdl-cell mdl-cell--3-col">
+        <div class="mdl-cell mdl-cell--2-col">
+        </div>
+        <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
+          <a href="mailto:sommershurbaji23@gmail.com"><fa [name]="'envelope'" class="contact-icons" [size]=4></fa></a>
         </div>
         <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
           <a href="https://ca.linkedin.com/in/sommershurbaji" target="_blank"><fa [name]="'linkedin-square'" class="contact-icons" [size]=4></fa></a>
@@ -45,7 +48,7 @@
         <div class="mdl-cell mdl-cell--2-col" style="text-align: center;">
           <a href="https://medium.com/@sommershurbaji" target="_blank"><fa [name]="'medium'" class="contact-icons" [size]=4></fa></a>
         </div>
-        <div class="mdl-cell mdl-cell--3-col">
+        <div class="mdl-cell mdl-cell--2-col">
         </div>
       </div>
       <div class="mdl-grid" style="margin-top: 10%;">
@@ -60,6 +63,120 @@
     </div>
     </div>
 
+    <div class="mdl-grid about" id="about">
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <h2 class="dark"> <strong>About Me</strong> </h2>
+        <div class="mdl-layout">
+          <div class="mdl-grid" style="width: 70%">
+
+            <p > I'm currently a computer science student at Queen's University. I am finishing up 
+              a 16 month software development internship with IBM Security, where I've had the opportunity
+              to work on enterprise web applications. These are some of the awesome technologies that I am 
+              currently working with!
+            </p>
+          </div>
+          <div class="mdl-grid" style="width: 80%">
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/angular.png" class="center-image" alt="angular" style="width:50px;height:50px;">
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/node.png"  class="center-image" alt="node.js" style="width:125px;height:50px;">
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/docker.png"  class="center-image" alt="docker" style="width:75px;height:75px;">
+            </div>
+          </div>
+          <div class="mdl-grid" style="width: 80%">
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/bluemix.png"  class="center-image" alt="bluemix" style="width:150px;height:100px;">
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/cloudant.png"  class="center-image" alt="cloudant" style="width:150px;height:40px;">
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <img src="../assets/images/couchdb.png"  class="center-image"  alt="couchdb" style="width:75px;height:75px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-grid experience" id="experience">
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <h2 class="dark"> <strong>Experience</strong> </h2>
+        <div class="mdl-layout">
+          <div class="mdl-grid" style="width: 100%">
+            <div class="mdl-cell mdl-cell--6-col" style="padding-right: 50px;">
+              <h4 class="dark subtitle"> Software Development Internship - IBM </h4>
+              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'laptop'" class="center-image" [size]=4></fa></div>
+              <p style="padding-top: 30px;">I am currently finishing up a 16 month software development internship with IBM Security.
+                  Throughout my internship, I have had the opportunity to work on web applications 
+                  using modern web development technologies such as Angular 4, Node.js, and Docker. I worked on
+                  front end development, where I implemented views and created reusable common components including
+                  a trends graph for data visualizations. I also had the opportunity to work on user authentication
+                  using Passportjs and JWT's,
+                  as well implementing RESTful
+                  API's within our back end microservices which were consumed by our front end. I learned how to 
+                  set up a continuous integration/development pipeline by using Travis CI to automatically test,
+                  build, and deploy our microservices. Overall, this internship has taught me to always be curious
+                  and never stop looking for ways to learn and improve myself as a developer.
+              </p>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <h4 class="dark subtitle"> Teaching Assistant - Queen's University </h4>
+              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'graduation-cap'" class="center-image" [size]=4></fa></div>
+              <p style="padding-top: 30px;">
+                I was a teaching assistant for two courses: CISC 121 - Introduction to Computing Science, and
+                CISC 282 - Intro to Web Development. As a teaching assistant, I was responsible for grading
+                assignments and exams for over one hundred students. I was also responsible for organizing weekly 
+                office hours to assist students with their assignments and exam preparations. My experience 
+                as a teaching assistant has really helped me improve my communication skills, since I 
+                would often be required to explain new concepts to students with various learning styles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-grid projects" id="projects">
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <h2 class="dark"> <strong>Projects</strong> </h2>
+        <div class="mdl-layout">
+          <div class="mdl-grid" style="width: 100%">
+            <div class="mdl-cell mdl-cell--6-col" style="padding-right: 50px;">
+              <h4 class="dark subtitle"> Chat Server </h4>
+              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'comments'" class="center-image" [size]=4></fa></div>
+              <p style="padding-top: 30px;">I am currently finishing up a 16 month software development internship with IBM Security.
+                  Throughout my internship, I have had the opportunity to work on web applications 
+                  using modern web development technologies such as Angular 4, Node.js, and Docker. I worked on
+                  front end development, where I implemented views and created reusable common components including
+                  a trends graph for data visualizations. I also had the opportunity to work on user authentication
+                  using Passportjs and JWT's,
+                  as well implementing RESTful
+                  API's within our back end microservices which were consumed by our front end. I learned how to 
+                  set up a continuous integration/development pipeline by using Travis CI to automatically test,
+                  build, and deploy our microservices. Overall, this internship has taught me to always be curious
+                  and never stop looking for ways to learn and improve myself as a developer.
+              </p>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <h4 class="dark subtitle"> Game Development Project </h4>
+              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'gamepad'" class="center-image" [size]=4></fa></div>
+              <p style="padding-top: 30px;">
+                I was a teaching assistant for two courses: CISC 121 - Introduction to Computing Science, and
+                CISC 282 - Intro to Web Development. As a teaching assistant, I was responsible for grading
+                assignments and exams for over one hundred students. I was also responsible for organizing weekly 
+                office hours to assist students with their assignments and exam preparations. My experience 
+                as a teaching assistant has really helped me improve my communication skills, since I 
+                would often be required to explain new concepts to students with various learning styles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
     <div class="mdl-grid experience" id="about">
       <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
         <h2 class="dark"> About Me </h2>
@@ -243,7 +360,7 @@
         </div>
       </div>
     </div>
-
+-->
 
   </main>
 </div>

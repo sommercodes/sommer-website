@@ -67,17 +67,18 @@ h2.light {
     background-color:#e6e6e8;
 }
 
+.about {
+    background-color:white;
+
+}
+
 .extracurriculars { 
     background-color:#e6e6e8;
 
 }
 
 .projects {
-    background-color: transparent;
-}
-
-.about {
-    background-color: transparent;
+    background-color: white;
 }
 
 .contact-icons:hover {
@@ -115,6 +116,22 @@ h2.light {
 }
 
 p {
+    /*color: #06000a;*/
+    text-align: center
+}
+
+.center-image {
+    display: block;
+    margin: auto;
+}
+
+.center-icon {
+    text-align: center;
     color: #06000a;
+
+}
+
+.subtitle {
+    text-align: center;
 }
 
