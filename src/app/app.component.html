@@ -67,7 +67,7 @@
       <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
         <h2 class="dark"> <strong>About Me</strong> </h2>
         <div class="mdl-layout">
-          <div class="mdl-grid" style="width: 70%">
+          <div class="mdl-grid" style="width: 50%">
 
             <p > I'm currently a computer science student at Queen's University. I am finishing up 
               a 16 month software development internship with IBM Security, where I've had the opportunity
@@ -75,12 +75,13 @@
               currently working with!
             </p>
           </div>
+          <h4 class="dark">Technologies I'm Working With </h4>
           <div class="mdl-grid" style="width: 80%">
             <div class="mdl-cell mdl-cell--4-col">
               <img src="../assets/images/angular.png" class="center-image" alt="angular" style="width:50px;height:50px;">
             </div>
             <div class="mdl-cell mdl-cell--4-col">
-              <img src="../assets/images/node.png"  class="center-image" alt="node.js" style="width:125px;height:50px;">
+              <img src="../assets/images/node.png"  class="center-image" alt="node.js" style="width:140px;height:50px;">
             </div>
             <div class="mdl-cell mdl-cell--4-col">
               <img src="../assets/images/docker.png"  class="center-image" alt="docker" style="width:75px;height:75px;">
@@ -88,7 +89,7 @@
           </div>
           <div class="mdl-grid" style="width: 80%">
             <div class="mdl-cell mdl-cell--4-col">
-              <img src="../assets/images/bluemix.png"  class="center-image" alt="bluemix" style="width:150px;height:100px;">
+              <img src="../assets/images/bluemix.png"  class="center-image" alt="bluemix" style="width:170px;height:100px;">
             </div>
             <div class="mdl-cell mdl-cell--4-col">
               <img src="../assets/images/cloudant.png"  class="center-image" alt="cloudant" style="width:150px;height:40px;">
@@ -105,10 +106,10 @@
       <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
         <h2 class="dark"> <strong>Experience</strong> </h2>
         <div class="mdl-layout">
-          <div class="mdl-grid" style="width: 100%">
+          <div class="mdl-grid" style="width: 80%">
             <div class="mdl-cell mdl-cell--6-col" style="padding-right: 50px;">
               <h4 class="dark subtitle"> Software Development Internship - IBM </h4>
-              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'laptop'" class="center-image" [size]=4></fa></div>
+              <div class="center-icon" style="padding-top: 30px;"><fa [name]="'code'" class="center-image" [size]=4></fa></div>
               <p style="padding-top: 30px;">I am currently finishing up a 16 month software development internship with IBM Security.
                   Throughout my internship, I have had the opportunity to work on web applications 
                   using modern web development technologies such as Angular 4, Node.js, and Docker. I worked on
@@ -118,8 +119,7 @@
                   as well implementing RESTful
                   API's within our back end microservices which were consumed by our front end. I learned how to 
                   set up a continuous integration/development pipeline by using Travis CI to automatically test,
-                  build, and deploy our microservices. Overall, this internship has taught me to always be curious
-                  and never stop looking for ways to learn and improve myself as a developer.
+                  build, and deploy our microservices.
               </p>
             </div>
             <div class="mdl-cell mdl-cell--6-col">
@@ -142,38 +142,38 @@
     <div class="mdl-grid projects" id="projects">
       <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet">
         <h2 class="dark"> <strong>Projects</strong> </h2>
-        <div class="mdl-layout">
-          <div class="mdl-grid" style="width: 100%">
+          <div class="mdl-grid" style="width: 80%">
             <div class="mdl-cell mdl-cell--6-col" style="padding-right: 50px;">
               <h4 class="dark subtitle"> Chat Server </h4>
               <div class="center-icon" style="padding-top: 30px;"><fa [name]="'comments'" class="center-image" [size]=4></fa></div>
-              <p style="padding-top: 30px;">I am currently finishing up a 16 month software development internship with IBM Security.
-                  Throughout my internship, I have had the opportunity to work on web applications 
-                  using modern web development technologies such as Angular 4, Node.js, and Docker. I worked on
-                  front end development, where I implemented views and created reusable common components including
-                  a trends graph for data visualizations. I also had the opportunity to work on user authentication
-                  using Passportjs and JWT's,
-                  as well implementing RESTful
-                  API's within our back end microservices which were consumed by our front end. I learned how to 
-                  set up a continuous integration/development pipeline by using Travis CI to automatically test,
-                  build, and deploy our microservices. Overall, this internship has taught me to always be curious
-                  and never stop looking for ways to learn and improve myself as a developer.
+              <p style="padding-top: 30px;">                  I have always been interested in real time web applications and web sockets, so as a side 
+                  project, I decided to try and implement a real time chat server. I used Anguler 4 for the 
+                  front end, and Node.js for the backend REST API's. I utilized Socket.io to implement
+                  the real time socket communication between the client and server, so that a user does
+                  not have to refresh their page every time a user connects or a message is sent. To store
+                  the messages and users, I am using MongoDB. For user authentication, I am using JWT and 
+                  I am using the bcrypt library to store hashed user passwords. I am still currently developing
+                  this project and making it more robust. I plan to add cases for users to delete accounts,
+                  and I am also working on error handling for the cases where users want to create duplicate 
+                  accounts. Check out the application at the link below!
               </p>
+              <a href="http://instant-chat-ui.herokuapp.com/" target="_blank" role="button" style="color: #e6e6e8; background-color: #c43235;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                Go!
+              </a> 
+
             </div>
             <div class="mdl-cell mdl-cell--6-col">
               <h4 class="dark subtitle"> Game Development Project </h4>
               <div class="center-icon" style="padding-top: 30px;"><fa [name]="'gamepad'" class="center-image" [size]=4></fa></div>
               <p style="padding-top: 30px;">
-                I was a teaching assistant for two courses: CISC 121 - Introduction to Computing Science, and
-                CISC 282 - Intro to Web Development. As a teaching assistant, I was responsible for grading
-                assignments and exams for over one hundred students. I was also responsible for organizing weekly 
-                office hours to assist students with their assignments and exam preparations. My experience 
-                as a teaching assistant has really helped me improve my communication skills, since I 
-                would often be required to explain new concepts to students with various learning styles.
-              </p>
+                  Jungle Escape is a game that I built in a group of 3 for a game development course last year.
+                  We used Unity3D and C# to develop the game. I have built the game using WebGL and 
+                  deployed it using a Node.js server. Check out the game at the link below!             </p>
+              <a href="http://jungle-escape.herokuapp.com/" target="_blank" role="button" style="color: #e6e6e8; background-color: #c43235;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                Go!
+              </a> 
             </div>
           </div>
-        </div>
       </div>
     </div>
 <!--

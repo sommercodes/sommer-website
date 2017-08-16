@@ -36,6 +36,13 @@ h2.light {
 
  }
 
+  h4.dark {
+    padding-top: 30px;
+    /*font-family: 'Roboto Mono', monospace;*/
+    text-align: center;
+
+ }
+
 .mdl-layout__drawer-button {
     color:#e6e6e8;
 }
@@ -79,6 +86,7 @@ h2.light {
 
 .projects {
     background-color: white;
+    text-align: center;
 }
 
 .contact-icons:hover {
@@ -123,6 +131,9 @@ p {
 .center-image {
     display: block;
     margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .center-icon {
