@@ -87,6 +87,7 @@ h2.light {
 .projects {
     background-color: white;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .contact-icons:hover {
